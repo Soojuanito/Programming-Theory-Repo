@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
+    // ENCAPSULATION
     {
         PlayerRb = GetComponent<Rigidbody>();
     }
@@ -35,6 +36,7 @@ public class PlayerController : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision)
+    // ABSTRACTION
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {

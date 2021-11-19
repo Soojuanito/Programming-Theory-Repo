@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public float restartDelay = 1f;
+    public float  restartDelay = 1f;
     public void EndGame()
+    // POLYMORPHISM
     {
         Debug.Log("GAME OVER");
 
