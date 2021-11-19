@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Player has collided with the enemy");
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 
